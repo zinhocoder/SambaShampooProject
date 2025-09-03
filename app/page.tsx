@@ -106,7 +106,7 @@ export default function SambaLandingPage() {
             <div className="flex justify-center lg:justify-end order-1 lg:order-2">
               <div className="relative">
                 <img
-                  src="/images/samba-hero.png"
+                  src="/images/sambaheroi.jpg"
                   alt="SAMBA Professional - Mulher com produtos de hidratação capilar"
                   className="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-3xl shadow-2xl"
                 />
@@ -325,7 +325,7 @@ export default function SambaLandingPage() {
                     className="w-32 h-48 mx-auto object-contain"
                   />
                   <h3 className="text-xl font-bold text-emerald-900">Protetor Térmico Smooth Liss</h3>
-                  <p className="text-emerald-700 text-sm">120ml - Proteção térmica e alisamento</p>
+                  <p className="text-emerald-700 text-sm">120ml - Proteção térmica e alinhamento</p>
 
                   <div className="space-y-2">
                     <div className="text-lg text-emerald-600 line-through">De: R$ 136,22</div>
@@ -359,7 +359,7 @@ export default function SambaLandingPage() {
                     className="w-32 h-48 mx-auto object-contain"
                   />
                   <h3 className="text-xl font-bold text-emerald-900">Shampoo Brazilian Curls</h3>
-                  <p className="text-emerald-700 text-sm">300ml - Especial para cabelos cacheados</p>
+                  <p className="text-emerald-700 text-sm">300ml - Indicado para cabelos cacheados</p>
 
                   <div className="space-y-2">
                     <div className="text-lg text-emerald-600 line-through">De: R$ 104,00</div>
@@ -454,6 +454,40 @@ export default function SambaLandingPage() {
               </CardContent>
             </Card>
           </div>
+
+          {/* Máscara Liquid Hair */}
+          <Card className="border-2 border-emerald-200 hover:border-yellow-400 transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 max-w-md mx-auto mt-8">
+            <CardContent className="p-6">
+              <div className="text-center space-y-4">
+                <img
+                  src="/images/mascaraliquidhair.png"
+                  alt="Máscara Liquid Hair"
+                  className="w-32 h-48 mx-auto object-contain"
+                />
+                <h3 className="text-xl font-bold text-emerald-900">Máscara Liquid Hair</h3>
+                <p className="text-emerald-700 text-sm">300ml - Hidratação líquida intensiva</p>
+
+                <div className="space-y-2">
+                  <div className="text-lg text-emerald-600 line-through">De: R$ 118,50</div>
+                  <div className="text-3xl font-bold text-emerald-900">R$ 65,18</div>
+                  <div className="text-sm text-emerald-600">ou 3x de R$ 21,73</div>
+                  <div className="inline-block bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                    45% OFF
+                  </div>
+                </div>
+
+                <Button
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-emerald-900 font-bold py-4 md:py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-base min-h-[50px] md:min-h-[44px] text-wrap"
+                  onClick={() =>
+                    window.open(createWhatsAppLink("Máscara Liquid Hair (300ml)", "R$ 65,18"), "_blank")
+                  }
+                >
+                  <ShoppingCart className="w-5 h-5 mr-2" />
+                  COMPRAR AGORA
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
 
           {/* Special Offer Banner */}
           <div className="mt-12 md:mt-16 bg-gradient-to-r from-emerald-600 to-yellow-500 rounded-3xl p-8 md:p-12 text-center text-white max-w-4xl mx-auto">
